@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.light {
+  background: url("../images/pexels-pixabay-267149.jpg") right center/cover;
+  background-repeat: no-repeat;
+}
+.light main div.container div.timeLine {
+  background-color: rgba(151, 203, 255, 0.7);
+  color: #fcfcfc;
+}
+
+.dark {
+  background: url("../images/pexels-neale-lasalle-631477.jpg") right center/100% 100%;
+  background-repeat: no-repeat;
+}
+.dark main div.container div.timeLine {
+  background-color: rgba(60, 60, 60, 0.8);
+  color: #d0d0d0;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 7vw;
+  cursor: pointer;
+}
+
+main div.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+main div.container video {
+  border-radius: 20px 20px 10px 10px;
+  width: "1024px";
+  height: "576px";
+  margin-right: 10px;
+}
+main div.container div.timeLine {
+  padding: 0.5rem 1.5rem 1rem 0.5rem;
+  font-size: 1.5rem;
+  border-top: solid;
+  border-bottom: dotted;
+  border-radius: 3rem;
+}
+main div.container div.timeLine div.timeLineTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+main div.container div.timeLine hr {
+  border: 1px dashed;
+}
+main div.container div.timeLine div.timeLineList {
+  padding-left: 1rem;
+}
+main div.container div.timeLine div.timeLineList p span {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0080ff;
+}
+main div.container div.timeLine div.timeLineList p :hover {
+  color: #6f00d2;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a img {
+  width: 7vw;
+}
+footer .reverseArrow {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1024px) {
+  main div.container video {
+    width: 100vw;
+    margin: 0px;
+  }
+  main div.timeLine {
+    margin-top: 0.25rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  body.light main div.container div.timeLine div.timeLineList p span {
+    color: #ffdc35;
+  }
+  .dark {
+    background: url("../images/pexels-neale-lasalle-631477.jpg") right center/cover;
+  }
+  div.container {
+    display: flex;
+    justify-content: center;
+  }
+  div.container div.timeLine {
+    border-left: solid;
+    border-right: dotted;
+  }
+  div.container div.timeLine div.timeLineList {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header img {
+    width: 17vw;
+  }
+  footer a img {
+    width: 17vw;
+  }
+}/*# sourceMappingURL=style.css.map */
