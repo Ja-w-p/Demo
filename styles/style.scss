@@ -12,7 +12,6 @@ body {
 // theme
 .light {
   background: url("../images/pexels-pixabay-267149.jpg") right center/cover;
-  background-repeat: no-repeat;
   main {
     div.container {
       div.timeLine {
@@ -24,8 +23,7 @@ body {
 }
 .dark {
   background: url("../images/pexels-neale-lasalle-631477.jpg") right center/100%
-    100%;
-  background-repeat: no-repeat;
+    100%; //這樣設電腦背景才看得到照片下方的森林
   main {
     div.container {
       div.timeLine {
@@ -139,6 +137,7 @@ footer {
   .dark {
     background: url("../images/pexels-neale-lasalle-631477.jpg") right
       center/cover;
+    //背景圖換手機看樹會變形，所以這裡改成cover
   }
   div.container {
     display: flex;

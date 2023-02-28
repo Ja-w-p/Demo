@@ -13,7 +13,6 @@ body {
 
 .light {
   background: url("../images/pexels-pixabay-267149.jpg") right center/cover;
-  background-repeat: no-repeat;
 }
 .light main div.container div.timeLine {
   background-color: rgba(151, 203, 255, 0.7);
@@ -22,7 +21,6 @@ body {
 
 .dark {
   background: url("../images/pexels-neale-lasalle-631477.jpg") right center/100% 100%;
-  background-repeat: no-repeat;
 }
 .dark main div.container div.timeLine {
   background-color: rgba(60, 60, 60, 0.8);
